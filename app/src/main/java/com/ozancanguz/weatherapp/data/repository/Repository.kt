@@ -1,4 +1,4 @@
-package com.ozancanguz.weatherapp.data
+package com.ozancanguz.weatherapp.data.repository
 
 import com.ozancanguz.weatherapp.data.remote.RemoteDataSource
 import dagger.hilt.android.scopes.ViewModelScoped
