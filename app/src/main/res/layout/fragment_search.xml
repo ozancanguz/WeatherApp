@@ -19,17 +19,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/searchRv"
-        app:layout_constraintVertical_bias="0.348"></ProgressBar>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"></ProgressBar>
 
     <EditText
         android:id="@+id/searchEditText"
-        android:layout_width="277dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/shape"
-
         android:gravity="center"
         android:hint="Search City"
         android:shape="rectangle"
@@ -41,22 +40,37 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/searchRv"
-        android:layout_width="409dp"
-        android:layout_height="481dp"
+        android:layout_width="405dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:listitem="@layout/search_city_rv"/>
+        app:layout_constraintTop_toBottomOf="@+id/searchEditText"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/search_city_rv" />
 
     <ImageView
         android:id="@+id/searchBtn"
-        android:layout_width="46dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="31dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
         android:src="@drawable/search"
         app:layout_constraintStart_toEndOf="@+id/searchEditText"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nofav"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchRv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

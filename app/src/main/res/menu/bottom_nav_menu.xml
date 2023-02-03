@@ -4,7 +4,5 @@
         android:title=" Search City"
         android:icon="@drawable/search"></item>
 
-    <item android:id="@+id/favoritesFragment"
-        android:title="Favorites"
-        android:icon="@drawable/favorites"></item>
+
 </menu>

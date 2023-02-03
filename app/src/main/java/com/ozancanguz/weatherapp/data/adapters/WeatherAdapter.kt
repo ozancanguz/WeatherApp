@@ -32,11 +32,12 @@ class WeatherAdapter:RecyclerView.Adapter<WeatherAdapter.WeatherViewHolder>() {
         val currentCity=weatherList[position]
         holder.itemView.Rv_date.text=currentCity.date
         holder.itemView.Rv_day.text=currentCity.day
-        holder.itemView.Rv_degree.text=currentCity.degree
-        holder.itemView.Rv_mindegree.text=currentCity.min
-        holder.itemView.Rv_maxdegree.text=currentCity.max
-        holder.itemView.Rv_humidity.text=currentCity.humidity
-        holder.itemView.Rv_night.text=currentCity.night
+        holder.itemView.Rv_status.text="Status : " +currentCity.status
+        holder.itemView.Rv_degree.text="Degree: " +currentCity.degree + " °C"
+        holder.itemView.Rv_mindegree.text="Min Degree: " +currentCity.min + " °C"
+        holder.itemView.Rv_maxdegree.text="Max Degree: " +currentCity.max + " °C"
+        holder.itemView.Rv_humidity.text="Humidity: " +currentCity.humidity
+        holder.itemView.Rv_night.text="Night Degree: " +currentCity.night + " °C"
 
         // glide image loading
         holder.itemView.Rv_iconimageview.loadImage(currentCity.icon)
