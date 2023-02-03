@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.weatherapp.R
 import com.ozancanguz.weatherapp.data.models.Weather
 import com.ozancanguz.weatherapp.data.models.WeatherResult
+import com.ozancanguz.weatherapp.data.util.Util.Companion.loadImage
 import kotlinx.android.synthetic.main.search_city_rv.view.*
 
 class WeatherAdapter:RecyclerView.Adapter<WeatherAdapter.WeatherViewHolder>() {
@@ -37,8 +38,8 @@ class WeatherAdapter:RecyclerView.Adapter<WeatherAdapter.WeatherViewHolder>() {
         holder.itemView.Rv_humidity.text=currentCity.humidity
         holder.itemView.Rv_night.text=currentCity.night
 
-        // glide image
-       // holder.itemView.Rv_iconimageview
+        // glide image loading
+        holder.itemView.Rv_iconimageview.loadImage(currentCity.icon)
     }
 
     override fun getItemCount(): Int {
