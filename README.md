@@ -22,3 +22,10 @@ city.
 - MVVM
 
 ![image](https://user-images.githubusercontent.com/64928807/216661657-db973b50-64ba-4420-9361-2ec4e9030636.png)
+
+------------------------------------DEMO----------------------------
+
+![weather app-min](https://user-images.githubusercontent.com/64928807/216666094-c37bfee0-db08-4557-8d07-cb6d82cf817c.gif)
+
+
+
