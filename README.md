@@ -20,3 +20,5 @@ city.
 **Arhictecture:**
 
 - MVVM
+
+![image](https://user-images.githubusercontent.com/64928807/216661657-db973b50-64ba-4420-9361-2ec4e9030636.png)
