@@ -45,7 +45,7 @@ class SearchFragment : Fragment() {
     }
 
     private fun observeliveData() {
-        binding.imageView.visibility=View.VISIBLE
+
        binding.searchBtn.setOnClickListener {
            binding.pb.visibility=View.VISIBLE
            val lang="tr"
@@ -54,7 +54,7 @@ class SearchFragment : Fragment() {
            weatherViewModel.weatherList.observe(viewLifecycleOwner, Observer {
                weatherAdapter.setData(it)
                binding.pb.visibility=View.INVISIBLE
-               binding.imageView.visibility=View.INVISIBLE
+
 
            })
 

@@ -12,7 +12,7 @@ class Util {
         fun ImageView.loadImage(uri: String?) {
             val options = RequestOptions()
 
-                .error(R.drawable.img)
+                .error(R.drawable.splash)
             Glide.with(context)
                 .setDefaultRequestOptions(options)
                 .load(uri)
